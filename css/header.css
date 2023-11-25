@@ -1,6 +1,27 @@
 /* STYLES FOR HEADER AND HEADER´S SONS */
 .header{
-    width: 100%;
-    height: 200px;
+    /* width: 100%; */
     background-color: rgba(0, 0, 0, 0.418);
+    background-image: url(../assets/images/index/bg__header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position-y:-400px ; */
+    grid-area: header;
+    height: 250px;
+    display: none;
+    animation-name: header_moving;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 100;
+}
+
+@keyframes header_moving {
+    from{
+        background-position: bottom;
+    }
+    to{
+        background-position: top;
+    }
 }

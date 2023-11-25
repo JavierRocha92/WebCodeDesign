@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,33 +16,60 @@
     <link rel="stylesheet" href="./css/nav_horizontal.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <!-- FONT-AWESOME REMOTE LIBRARY -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <div class="container center_column">
-        <header class="header center_row">
+        <header class="header">
         </header>
         <!-- nav sticky container -->
         <div class="center_row nav_container">
+            <!-- menu icon -->
+            <i class="fa-solid fa-bars nav__icon nav__icon--menu" id="menu_icon"></i>
+            <!-- user icon -->
+            <i class="fa-solid fa-user nav__icon nav__icon--user" id="user_icon"></i>
+            <a href="./index.html" class=" center_column container_image">
+                <img src="./assets/images/index/header__logo.png" alt="" class="nav__image">
+            </a>
             <nav class="center_row nav" id="nav">
-                <ul class="center_row nav__list">
-                    <li class="center_row nav__item nav__item--home"><a href="./index.html" class="nav__link nav__link--home">Home</a></li>
-                    <li class="center_row nav__item nav__item--comma"><a href="./pages/languajes.html" class="nav__link nav__link--comma">Pagina 1</a></li>
-                    <li class="center_row nav__item nav__item--comma"><a href="#" class="nav__link nav__link--comma">Pagina 2</a></li>
-                    <li class="center_row nav__item nav__item--comma"><a href="#" class="nav__link nav__link--comma">Pagina 3</a></li>
-                    <li class="center_row nav__item nav__item--last"><a href="#" class="nav__link nav__link--last">Pagina 4</a></li>
+                <ul class="nav__list">
+                    <li class="center_row nav__item nav__item--home"><a href="./index.html"
+                            class="nav__link nav__link--home">Home</a></li>
+                    <li class="center_row nav__item nav__item--comma"><a href="./pages/languajes.html"
+                            class="nav__link nav__link--comma">Pagina 1</a></li>
+                    <li class="center_row nav__item nav__item--comma"><a href="./pages/tools.html"
+                            class="nav__link nav__link--comma">Pagina 2</a></li>
+                    <li class="center_row nav__item nav__item--comma"><a href="#"
+                            class="nav__link nav__link--comma">Pagina 3</a></li>
+                    <li class="center_row nav__item nav__item--last"><a href="#"
+                            class="nav__link nav__link--last">Pagina 4</a></li>
                 </ul>
             </nav>
+            <!-- social media container  -->
+            <div class="social-media">
+                <a class="social-media__link" href="#" target="_blank">
+                    <i class="nav__icon fa-brands fa-github"></i></a>
+                <a class="social-media__link" href="#" target="_blank">
+                    <i class="nav__icon fa-brands fa-linkedin"></i></a>
+                <a class="social-media__link" href="#" target="_blank">
+                    <i class="nav__icon fa-brands fa-facebook"></i></a>
+                <a class="social-media__link" href="#" target="_blank">
+                    <i class="nav__icon fa-brands fa-instagram"></i></a>
+            </div>
         </div>
         <!-- main -->
-        <main class="center_row main">
+        <main class="center_column main">
             <!-- container for two form -->
             <div class="container_forms" id="container__forms">
                 <!-- container for sign up form -->
                 <div class="center_column container__form container__form--signup" id="signup">
                     <!-- form title -->
-                    <h2 class="form__title">Create an account</h2>
+                    <h2 class="form__title">Create an account
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-xmark icon"></i>
+                    </h2>
                     <!-- contianer for accounts google and facebook -->
                     <div class="center_column form__others_account">
                         <div class="form__others_container">
@@ -50,18 +78,19 @@
                                 &nbsp;&nbsp;&nbsp;Sign up with Google
                             </a>
                         </div>
-                            <div class="form__others_container">
-                                <a class="form__icon" href="" target="_blank">
-                                    <i class="fa-brands fa-facebook-f form__icon--blue"></i>
-                                    &nbsp;&nbsp;&nbsp;Sign up with Facebook
-                                </a>
-                            </div>
+                        <div class="form__others_container">
+                            <a class="form__icon" href="" target="_blank">
+                                <i class="fa-brands fa-facebook-f form__icon--blue"></i>
+                                &nbsp;&nbsp;&nbsp;Sign up with Facebook
+                            </a>
+                        </div>
                     </div>
                     <!-- form to enter your data -->
                     <form action="mailto:javierrg1992@gamil.com" method="post" class="center_column form form--login">
                         <input type="email" name="email" class="form__input" placeholder="Type email">
                         <input type="password" name="password" class="form__input" placeholder="Type your password">
-                        <input type="password" name="rep_password" class="form__input" placeholder="Type your password again">
+                        <input type="password" name="rep_password" class="form__input"
+                            placeholder="Type your password again">
                         <div class="center_row checkbox">
                             <input type="checkbox" name="terms" class="form__input form__input--checkbox">
                             <label class="form__label" for="terms">Accept terms about private policy</label>
@@ -78,7 +107,10 @@
                 <!-- container for log in form -->
                 <div class="center_column container__form container__form--login" id="login">
                     <!-- form title -->
-                    <h2 class="form__title">Type your account</h2>
+                    <h2 class="form__title">Type your account
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-xmark icon"></i>
+
+                    </h2>
                     <!-- contianer for accounts google and facebook -->
                     <div class="center_column form__others_account">
                         <div class="form__others_container">
@@ -87,12 +119,12 @@
                                 &nbsp;&nbsp;&nbsp;Log in with Google
                             </a>
                         </div>
-                            <div class="form__others_container">
-                                <a class="form__icon" href="" target="_blank">
-                                    <i class="fa-brands fa-facebook-f form__icon--blue"></i>
-                                    &nbsp;&nbsp;&nbsp;Log in with Facebook
-                                </a>
-                            </div>
+                        <div class="form__others_container">
+                            <a class="form__icon" href="" target="_blank">
+                                <i class="fa-brands fa-facebook-f form__icon--blue"></i>
+                                &nbsp;&nbsp;&nbsp;Log in with Facebook
+                            </a>
+                        </div>
                     </div>
                     <!-- form to enter your data -->
                     <form action="mailto:javierrg1992@gamil.com" method="post" class="center_column form form--login">
@@ -143,20 +175,97 @@
                     </div>
                 </div>
                 <div class="visor__container-window">
-                    <div class="visor__window"></div>
+                    <div class="visor__window visor__window--last"></div>
                     <div class="bar">
                         <!-- animatin white bar -->
                     </div>
                 </div>
-            </div>    
+            </div>
+            <div class="center_column cards">
+                <h2 class="cards__title">Start a web designer career?</h2>
+                <!-- card 1-->
+                <div class=" center_column card card--languajes">
+                    <h3 class="card__title">Which languajes are used in web dev?</h3>
+                    <main class="card__content">
+                        <p class="card__text">
+                            In the realm of web design, delving into the most widely-used programming languages is key
+                            to
+                            unlocking an array of boundless opportunities. HTML, CSS, and JavaScript stand as the
+                            foundational
+                            pillars that power the majority of modern websites. HTML provides the basic structure, CSS
+                            adds
+                            style and design, while JavaScript brings interactivity and dynamism to web pages.
+                        </p>
+                        <img src="./assets/images/index/index__up.jpg" alt="" class="card__image">
+                    </main>
+                    <footer class="card__footer">
+                        <p class="card__text--footer">
+                            To know more about &nbsp;&nbsp;&nbsp;
+                            <a href="#" class="card__link">HTML</a>&nbsp;&nbsp;&nbsp;
+                            <a href="#" class="card__link">CSS</a>&nbsp;&nbsp;&nbsp;
+                            <a href="#" class="card__link">JS</a>
+                        </p>
+                    </footer>
+                </div>
+                <!-- card 2-->
+                <div class=" center_column card card--tools">
+                    <h3 class="card__title">Use tools make easier</h3>
+                    <main class="card__content card__content--tools">
+                        <p class="card__text">
+                            In addition to programming languages, design tools are indispensable for a web designer.The
+                            role of specialized tools cannot be overstated.
+                            Tools such as Bootstrap, React, and Node.js stand as pillars in shaping the digital
+                            landscape. Bootstrap, a robust front-end framework, expedites the creation of responsive and
+                            visually captivating websites. Its pre-built components and responsive grid system
+                            streamline the design process.
+                        </p>
+                        <img src="./assets/images/index/index_tools.jpg" alt="" class="card__image">
+                    </main>
+                    <footer class="card__footer">
+                        <p class="card__text--footer">
+                            To know more about &nbsp;&nbsp;&nbsp;
+                            <a href="#" class="card__link">HTML</a>&nbsp;&nbsp;&nbsp;
+                            <a href="#" class="card__link">CSS</a>&nbsp;&nbsp;&nbsp;
+                            <a href="#" class="card__link">JS</a>
+                        </p>
+                    </footer>
+                </div>
+                <!-- card 3-->
+                <div class=" center_column card card--seo">
+                    <h3 class="card__title">What about SEO?</h3>
+                    <main class="card__content">
+                        <p class="card__text">
+                            However, creating aesthetically pleasing websites isn’t the sole focus. This is where SEO
+                            (Search
+                            Engine Optimization) comes into play. SEO is pivotal for a website to be discovered on
+                            search
+                            engines like Google. Proficiency in HTML, CSS, and JavaScript is crucial for optimizing the
+                            site and
+                            enhancing its visibility in search results. Additionally, tools such as Google Analytics and
+                            Google
+                            Search Console aid in monitoring site performance and making data-driven adjustments.
+                        </p>
+                        <img src="./assets/images/index/index_down.webp" alt="" class="card__image">
+                    </main>
+                    <footer class="card__footer">
+                        <p class="card__text--footer">
+                            To know more about &nbsp;&nbsp;&nbsp;
+                            <a href="#" class="card__link">HTML</a>&nbsp;&nbsp;&nbsp;
+                            <a href="#" class="card__link">CSS</a>&nbsp;&nbsp;&nbsp;
+                            <a href="#" class="card__link">JS</a>
+                        </p>
+                    </footer>
+                </div>
+            </div>
         </main>
         <footer class="footer">
         </footer>
-        
+
     </div>
     <!-- BOOTSTRAP JS FILE -->
     <script src="./js/bootstrap.bundle.min.js"></script>
     <!-- OTHER JS FILES -->
     <script src="./js/script.js"></script>
 </body>
+
 </html>

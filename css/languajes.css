@@ -1,3 +1,13 @@
+.title,.description{
+    color: white;
+}
+.title{
+    margin-bottom: 30px;
+    font-variant: small-caps;
+    font-size: 3rem;
+    border-bottom: 2px solid white;
+    width: 100%;
+}
 .cards{
     width: 100%;
     padding: 10px;
@@ -43,18 +53,18 @@
 .card__title--js{
     background-color: #EFD81D; 
 }
-.card__title--git{
-    background-color: #E84E31; 
+.card__title--php{
+    background-color: #7377AD; 
+    left: 450px;
 }
-.card__title--react{
-    background-color: #50BBD7;
+.card__title--python{
+    background-color: #366E9D;
     left: 470px; 
 }
-.card__title--seo{
-    background-color: #57BA41;
-    left: 460px; 
+.card__title--java{
+    background-color: #E51F24;
 }
-.title{
+.title--card{
     position: relative;
     top: 20px;
     left: 30px;
@@ -83,25 +93,25 @@
     left: 5px;
     opacity: 0;
 }
-.title--git::after{
-    content: 'GIT';
+.title--php::after{
+    content: 'PHP';
     position: absolute;
     top: -70px;
     left: -25px;
     opacity: 0;
 }
-.title--react::after{
-    content: 'REACT';
+.title--python::after{
+    content: 'PYTHON';
     position: absolute;
     top: -70px;
-    left: -70px;
+    left: -95px;
     opacity: 0;
 }
-.title--seo::after{
-    content: 'SEO';
+.title--java::after{
+    content: 'JAVA';
     position: absolute;
     top: -70px;
-    left: -25px;
+    left: -40px;
     opacity: 0;
 }
 .card__hidden{
@@ -122,16 +132,16 @@
 .card:hover .card__title--js{
     background-color: #efd61d74;
 }
-.card:hover .card__title--git{
-    background-color: #e84f3170; 
+.card:hover .card__title--php{
+    background-color: #7377ad7e; 
 }
-.card:hover .card__title--react{
-    background-color: #50bcd782;
+.card:hover .card__title--python{
+    background-color: #366f9d6d;
 }
-.card:hover .card__title--seo{
-    background-color: #57ba4172; 
+.card:hover .card__title--java{
+    background-color: #e51f2681;
 }
-.card:hover .title{
+.card:hover .title--card{
     top: 120px;
     left: 280px;
     color: white;
@@ -150,7 +160,7 @@
 .card:hover .card__img{
     transform: scale(1);
 }
-.card:hover .title::after{
+.card:hover .title--card::after{
     opacity: 1;
 }
 
