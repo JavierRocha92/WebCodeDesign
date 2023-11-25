@@ -1,5 +1,6 @@
 .title,.description{
     color: white;
+    margin-left: 40px;
 }
 .title{
     margin-bottom: 30px;
@@ -11,7 +12,6 @@
 .cards_tools{
     width: 100%;
     flex-wrap: wrap;
-    border: 2px solid yellow;
     padding: 10px;
 }
 .card_tools{

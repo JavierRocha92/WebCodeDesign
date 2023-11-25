@@ -1,78 +1,54 @@
 /* FOOTER */
 .footer {
+    margin-top: 150px;
     width: 100%;
     background-color: black;
     display: flex;
     justify-content: center;
     grid-area: footer;
-}
-
-/* EACH ARTICLE FOOTER */
-.footer__article {
-    width: 200px;
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    border-right: 1px solid rgba(255, 255, 255, 0.603);
-}
-/* FOOTER HEADER */
-.footer__header {
-    border-bottom: 1px solid red;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 30px;
-}
-
-.footer__title {
-    font-size: 1.1rem;
+    position: relative;
     color: white;
+    border-top: 1px solid white;
+
 }
-/* FOOTER MAIN */
-.footer__main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-/* FOOTER LIST */
-.footer__list {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    margin-top: 0;
+.footer__visor{
+    position: absolute;
     width: 80%;
-    padding: 0;
+    top: -80px;
+    padding: 50px;
+    background: rgb(221,0,255);
+    background: linear-gradient(90deg, rgba(221,0,255,1) 0%, rgba(60,33,179,1) 50%, rgba(8,4,138,1) 100%);  
 }
-.footer__item {
-    width: 80%;
-    margin-bottom: 3px;
-}
-.footer__link {
-    text-decoration: none;
+.footer__title{
     color: white;
-    display: block;
+    /* font-variant: small-caps; */
+}
+.social-media--footer{
+    position: static;
+    border: 3px solid red;
+    display: none;
+}
+.footer__title--lists{
     width: 100%;
-    border-bottom: 1px solid transparent;
+    margin: 40px;
+    margin-top: 80px;
+    padding-left: 40px;
 }
-.footer__link:hover {
-    border-bottom: 1px solid white;
-}
-/* IMAGES FOOTER CONATINER */
-.footer__images {
-    display: flex;
+.lists{
     flex-wrap: wrap;
-    justify-content: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.footer__list{
+    list-style: none;
+    /* width: 22%; */
+}
+.footer__footer{
+    border-top: 1px solid gray;
+    color: gray;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+    padding-right: 40px;
 
-}
-/* IMAGE FOOTER */
-.footer__image {
-    width: 40px;
-    height: 40px;
-    margin: 5px;
-}
-/* MODIFIER TO MAKE BIGGER SOME IMAGES(CONGRATULATIONS ARTICLE) */
-.footer__image--belt {
-    width: 100px;
 }

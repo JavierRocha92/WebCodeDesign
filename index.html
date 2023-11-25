@@ -32,32 +32,34 @@
             <!-- user icon -->
             <i class="fa-solid fa-user nav__icon nav__icon--user" id="user_icon"></i>
             <a href="./index.html" class=" center_column container_image">
-                <img src="./assets/images/index/header__logo.png" alt="" class="nav__image">
+                <img src="./assets/images/index/software-development.png" alt="" class="nav__image nav__image--1400">
+                <!-- <img src="../assets/images/index/software-development.png" alt="" class="nav__image nav__image--menu"> -->
+                <h1 class="nav__title">TheMagicOfCoding</h1>
             </a>
             <nav class="center_row nav" id="nav">
                 <ul class="nav__list">
                     <li class="center_row nav__item nav__item--home"><a href="./index.html"
                             class="nav__link nav__link--home">Home</a></li>
                     <li class="center_row nav__item nav__item--comma"><a href="./pages/languajes.html"
-                            class="nav__link nav__link--comma">Pagina 1</a></li>
+                            class="nav__link nav__link--comma">Coding</a></li>
                     <li class="center_row nav__item nav__item--comma"><a href="./pages/tools.html"
-                            class="nav__link nav__link--comma">Pagina 2</a></li>
-                    <li class="center_row nav__item nav__item--comma"><a href="#"
-                            class="nav__link nav__link--comma">Pagina 3</a></li>
+                            class="nav__link nav__link--comma">Tools</a></li>
+                    <li class="center_row nav__item nav__item--comma"><a href="./pages/seo.html"
+                            class="nav__link nav__link--comma">Seo</a></li>
                     <li class="center_row nav__item nav__item--last"><a href="#"
-                            class="nav__link nav__link--last">Pagina 4</a></li>
+                            class="nav__link nav__link--last">About</a></li>
                 </ul>
             </nav>
             <!-- social media container  -->
-            <div class="social-media">
+            <div class="social-media social_media--absolute">
                 <a class="social-media__link" href="#" target="_blank">
-                    <i class="nav__icon fa-brands fa-github"></i></a>
+                    <i class="nav__icon nav__icon--social-media fa-brands fa-github"></i></a>
                 <a class="social-media__link" href="#" target="_blank">
-                    <i class="nav__icon fa-brands fa-linkedin"></i></a>
+                    <i class="nav__icon nav__icon--social-media fa-brands fa-linkedin"></i></a>
                 <a class="social-media__link" href="#" target="_blank">
-                    <i class="nav__icon fa-brands fa-facebook"></i></a>
+                    <i class="nav__icon nav__icon--social-media fa-brands fa-facebook"></i></a>
                 <a class="social-media__link" href="#" target="_blank">
-                    <i class="nav__icon fa-brands fa-instagram"></i></a>
+                    <i class="nav__icon nav__icon--social-media fa-brands fa-instagram"></i></a>
             </div>
         </div>
         <!-- main -->
@@ -67,11 +69,13 @@
                 <!-- container for sign up form -->
                 <div class="center_column container__form container__form--signup" id="signup">
                     <!-- form title -->
+                   <div class="form__title_container">
                     <h2 class="form__title">Create an account
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-xmark icon"></i>
                     </h2>
-                    <!-- contianer for accounts google and facebook -->
-                    <div class="center_column form__others_account">
+                    <i class="fa-solid fa-circle-xmark icon"></i>
+                   </div>
+                   <!-- contianer for accounts google and facebook -->
+                   <div class="center_column form__others_account">
                         <div class="form__others_container">
                             <a class="form__icon" href="" target="_blank">
                                 <i class="fa-brands fa-google form__icon--red"></i>
@@ -90,7 +94,7 @@
                         <input type="email" name="email" class="form__input" placeholder="Type email">
                         <input type="password" name="password" class="form__input" placeholder="Type your password">
                         <input type="password" name="rep_password" class="form__input"
-                            placeholder="Type your password again">
+                        placeholder="Type your password again">
                         <div class="center_row checkbox">
                             <input type="checkbox" name="terms" class="form__input form__input--checkbox">
                             <label class="form__label" for="terms">Accept terms about private policy</label>
@@ -102,15 +106,16 @@
                         <p class="form__text" id="login__button">Log in</p>
                     </div>
                 </div>
-
-
+                
+                
                 <!-- container for log in form -->
                 <div class="center_column container__form container__form--login" id="login">
                     <!-- form title -->
-                    <h2 class="form__title">Type your account
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-xmark icon"></i>
-
-                    </h2>
+                    <div class="form__title_container">
+                     <h2 class="form__title">Type your account
+                     </h2>
+                     <i class="fa-solid fa-circle-xmark icon"></i>
+                    </div>
                     <!-- contianer for accounts google and facebook -->
                     <div class="center_column form__others_account">
                         <div class="form__others_container">
@@ -258,8 +263,67 @@
                 </div>
             </div>
         </main>
-        <footer class="footer">
+        <!-- main final -->
+        <!-- footer -->
+        <footer class=" center_column footer">
+            <!-- footer absolute visor -->
+            <div class="footer__visor">
+                <!-- footer title -->
+                <h2 class="footer__title">Begin follow us </h2>
+                <!-- social media container  -->
+                <div class="social-media social-media--footer ">
+                    <a class="social-media__link" href="#" target="_blank">
+                        <i class="nav__icon fa-brands fa-github"></i></a>
+                    <a class="social-media__link" href="#" target="_blank">
+                        <i class="nav__icon fa-brands fa-linkedin"></i></a>
+                    <a class="social-media__link" href="#" target="_blank">
+                        <i class="nav__icon fa-brands fa-facebook"></i></a>
+                    <a class="social-media__link" href="#" target="_blank">
+                        <i class="nav__icon fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <!-- title icon -->
+            <!-- title lists footer -->
+            <h2 class="footer__title--lists"><i class="fa-brands fa-codepen"></i>&nbsp;&nbsp;&nbsp;TheMagicOfCoding</h2>
+            <div class="center_row lists">
+                <!-- resources list -->
+                <ul class="footer__list">
+                    <h3 class="list__title">Resources</h3>
+                    <li class="footer__list_item">list element</li>
+                    <li class="footer__list_item">list element</li>
+                    <li class="footer__list_item">list element</li>
+                    <li class="footer__list_item">list element</li>
+                </ul>
+                <!-- company list -->
+                <ul class="footer__list">
+                    <h3 class="list__title">Comapnies</h3>
+                    <li class="footer__list_item">list element</li>
+                    <li class="footer__list_item">list element</li>
+                    <li class="footer__list_item">list element</li>
+                    <li class="footer__list_item">list element</li>
+                </ul>
+                <!-- langujaes list -->
+                <ul class="footer__list">
+                    <h3 class="list__title">Languajes</h3>
+                    <li class="footer__list_item">list element</li>
+                    <li class="footer__list_item">list element</li>
+                    <li class="footer__list_item">list element</li>
+                    <li class="footer__list_item">list element</li>
+                </ul>
+                <!-- featuring list -->
+                <ul class="footer__list">
+                    <h3 class="list__title">Featurings</h3>
+                    <li class="footer__list_item">list element</li>
+                    <li class="footer__list_item">list element</li>
+                    <li class="footer__list_item">list element</li>
+                    <li class="footer__list_item">list element</li>
+                </ul>
+            </div>
+            <footer class="footer__footer">
+                &#169;2023 TheMagicOfCoding
+            </footer>
         </footer>
+
 
     </div>
     <!-- BOOTSTRAP JS FILE -->

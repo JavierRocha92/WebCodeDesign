@@ -49,8 +49,7 @@ const checkElement = (event) => {
 /**
  * function to show container forms by update style to coatiner_form element
  */
-const showForms = () => {
-    console.log('hola')
+const manageForms = () => {
     container__forms.style.display = 'flex'
 }
 /**
@@ -70,7 +69,7 @@ const exchangeMenu = () => {
 
 //event to catch a click on user icon from nav
 
-user_icon.addEventListener('click',showForms)
+user_icon.addEventListener('click',manageForms)
 
 //event to catch a click on menu icon from nav
 

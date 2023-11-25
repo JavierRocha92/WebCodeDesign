@@ -2,7 +2,9 @@
 .header{
     /* width: 100%; */
     background-color: rgba(0, 0, 0, 0.418);
-    background-image: url(../assets/images/index/bg__header.jpg);
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,0.5308823358444941) 0%, rgba(255,255,255,0.2283613274411327) 50%, rgba(255,255,255,0) 100%),url(../assets/images/index/bg__header.jpg);
+    /* background-image: url(../assets/images/index/bg__header.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     /* background-position-y:-400px ; */
