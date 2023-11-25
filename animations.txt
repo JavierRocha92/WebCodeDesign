@@ -1,0 +1,4 @@
+Las animaciones del formualrio cuando se pincha en el login o sing up respectivamente el formulario que este en pantalla se cambia por el otro, para que aparezcan desde la resolucion mas peueña hasta 1200ps se realiza mediante el icono de ususario y para cerrarlo con la x del propio formulario.
+Para abrir el menu de hamburguesa siempre se aparezca su icono el menu sera desplegado y recogido meidante el mismo boton.
+las tarjetas tanto de la pagina de tools como la pagina de codign tienen animaciones al pasar el raton por encima de ellas.
+Todas las paginas realizan cambiamos modificando grid, en especial los cambios mas especificos se realizan en el index realizando cambios en el main a todas las resoluciones

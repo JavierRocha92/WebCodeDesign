@@ -50,7 +50,7 @@ const checkElement = (event) => {
  * function to show container forms by update style to coatiner_form element
  */
 const manageForms = () => {
-    container__forms.style.display = 'flex'
+    container__forms.style.display = 'block'
 }
 /**
  * function to hide container forms by update style to coatiner_form element
